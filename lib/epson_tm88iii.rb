@@ -8,7 +8,7 @@ require 'logger'
 #|    (LIBUSB::Endpoint) -> bool
 #| } -> LIBUSB::Endpoint
 def endpoint!(interface, what, &blk)
-  found = interface.endpoints.find(blk)
+  found = interface.endpoints.find(&blk)
   raise "no endpoint found: #{what}" unless found
 
   found
