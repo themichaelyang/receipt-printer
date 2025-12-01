@@ -1,0 +1,35 @@
+# Generated from lib/epson_tm88iii.rb with RBS::Inline
+
+DEFAULT_TIMEOUT: ::Integer
+
+class EpsonTM88III
+  # $ lsusb
+  # Bus 001 Device 001: ID 04b8:0202
+  VENDOR_ID: ::Integer
+
+  PRODUCT_ID: ::Integer
+
+  # : LIBUSB::Endpoint
+  attr_reader in_endpoint: untyped
+
+  # : LIBUSB::Endpoint
+  attr_reader out_endpoint: untyped
+
+  # : LIBUSB::Device
+  attr_reader device: untyped
+
+  # : LIBUSB::Interface
+  attr_reader interface: untyped
+
+  # : (?port_number: Integer?) -> void
+  def initialize: (?port_number: Integer?) -> void
+
+  # : (String, ?timeout: Integer) -> Fixnum
+  def write: (String, ?timeout: Integer) -> Fixnum
+
+  # : (Integer, ?timeout: Integer) -> String
+  def read: (Integer, ?timeout: Integer) -> String
+
+  # : (?timeout: Integer) -> String
+  def read_all: (?timeout: Integer) -> String
+end

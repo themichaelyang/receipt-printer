@@ -1,4 +1,6 @@
 # typed: true
+# rbs_inline: enabled
+
 require 'libusb'
 require 'logger'
 
