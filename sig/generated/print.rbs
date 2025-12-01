@@ -1,0 +1,5 @@
+# Generated from print.rb with RBS::Inline
+
+class EpsonTM88III
+  def initialize: () -> untyped
+end

@@ -1,0 +1,41 @@
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.0
+  Exclude:
+    - "vendor/**/*"
+    - "sig/**/*"
+    - "Gemfile"
+    - "Gemfile.lock"
+
+Layout/LineLength:
+  Max: 120
+
+Layout/Layout/ExtraSpacing:
+  AllowBeforeTrailingComments: true
+
+Layout/LeadingCommentSpace:
+  Enabled: false
+
+Layout/EmptyLineAfterMagicComment:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 30
+  CountRepeatedAttributes: false
+
+Metrics/MethodLength:
+  Max: 300
+
+Metrics/BlockLength:
+  Exclude:
+    - "Rakefile"
+    - "**/*.rake"
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/RedundantSelf:
+  Enabled: false

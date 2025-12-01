@@ -1,0 +1,1 @@
+- Sorbet with RBS inline typing
